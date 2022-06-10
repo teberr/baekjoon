@@ -8,8 +8,9 @@ def dfs(index):
         for x in number:
             print(x,end=" ")
         print()
-    for i in range(index,N+1):
-        number.append(i)
-        dfs(i+1)
-        number.pop()
+    else:
+        for i in range(index,N+1):
+            number.append(i)
+            dfs(i+1)
+            number.pop()
 dfs(1)
